@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="card card-6" >
+    <div class="card-heading">
+        <h2 class="title" id="lblTitulo"></h2>
+        <div style="width:100%;display:block;height: 40px;">
+            <span class="lblSubTitulo" id="lblDescripcion"></span>
+            <span class="lblFecha" id="lblFecha"></span>
+        </div>
+        
+    </div>
+    <div class="card-body">
+        <form id="div_preview" name="div_preview"></form>
+        <div class="div_mensaje" >
+            <div id="success" style="display:none">
+                <h3>Ok!</h3>
+                <p id="lblTitlesuccess"></p>
+                <button class="success">Cerrar</button>
+            </div>
+
+
+            <div id="error" style="display:none">
+                <h3>Error!</h3>
+                <p  id="lblTitleerror"></p>
+                <button class="error">Intertar nuevamente</button>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="card-footer">
+        <input type="button" style="width:200px" name="btnGuardar" id="btnGuardar" value="Enviar Respuestas" class="btn btn--radius-2 btn--blue-2" />
+    </div>
+</div>
+
+<input type="hidden" id="token" name="token" />
+<input type="hidden" id="idUsuario" name="idUsuario" />
+<input type="hidden" id="idForm" name="idForm" />
+<input type="hidden" id="idEmpresa" name="idEmpresa" />
+
